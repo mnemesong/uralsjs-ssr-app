@@ -1,13 +1,20 @@
 {
   "name": "uralsjs-ssr-app",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "",
   "main": "js/src/index.js",
   "scripts": {
     "tsc": "tsc",
     "build-test": "tsc && mocha ./js/test/**/*.js"
   },
-  "keywords": ["ssr", "frontend", "framework", "uralsjs", "static", "html"],
+  "keywords": [
+    "ssr",
+    "frontend",
+    "framework",
+    "uralsjs",
+    "static",
+    "html"
+  ],
   "author": "Anatoly Starodubtsev <tostar74@mail.ru>",
   "license": "MIT",
   "devDependencies": {
@@ -18,7 +25,7 @@
   },
   "dependencies": {
     "node-html-parser": "^6.1.5",
-    "uralsjs-app-abstractions": "0.0.1",
+    "uralsjs-app-abstractions": "^0.1.1",
     "uralsjs-id-html-tools": "0.0.1",
     "uralsjs-map-record": "0.0.1",
     "uralsjs-reactive-storage": "0.0.1"

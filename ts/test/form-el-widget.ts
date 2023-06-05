@@ -1,7 +1,12 @@
 import { FormEl } from "./form-el-model";
 
+export type FormElWidgetDep = {
+    getHelloMsg: () => string,
+}
+
 export const formElWidget = (
     m: FormEl,
-    id: string
+    id: string,
+    d: FormElWidgetDep
 ) => `
-<div id="${id}"><h4>Form</h4><input type='text' value='${m.header}'></div>`
+<div id="${id}" data-hello="${d.getHelloMsg()}"><h4>Form</h4><input type='text' value='${m.header}'></div>`

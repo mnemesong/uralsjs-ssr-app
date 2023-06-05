@@ -4,11 +4,12 @@ import { describe, it } from "mocha";
 import { elModelSet, resModelSet, formElModelSet } from "./sets";
 
 export const run = (html) => ssrApp({
-    el: elModelSet,
-    res: resModelSet,
-    formEl: formElModelSet
-},
-html
+        el: elModelSet,
+        res: resModelSet,
+        formEl: formElModelSet,
+    },
+    html,
+    {getHelloMsg: () => "He-e-ll-o!"}
 );
 
 describe("test ssr", () => {
@@ -26,7 +27,7 @@ describe("test ssr", () => {
 <li id="res_2" class='res-li'>Макарченко</li></ol>
 </li></ol>
 <div id="formContainer">
-<div id="elForm"><h4>Form</h4><input type='text' value=''></div></div>
+<div id="elForm" data-hello="He-e-ll-o!"><h4>Form</h4><input type='text' value=''></div></div>
 </body>`, 
             run('<body>\n<ol></ol>\n<div id="formContainer"></div>\n</body>')
         );
