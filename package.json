@@ -1,7 +1,7 @@
 {
   "name": "uralsjs-ssr-app",
-  "version": "0.1.1",
-  "description": "",
+  "version": "0.1.2",
+  "description": "Tool for server side rendering uralsjs-app",
   "main": "js/src/index.js",
   "scripts": {
     "tsc": "tsc",
@@ -18,16 +18,16 @@
   "author": "Anatoly Starodubtsev <tostar74@mail.ru>",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^10.2.0",
+    "mocha": "^9.*",
     "typescript": "^4.9.4",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "^18.11.18"
+    "@types/mocha": "^9.*",
+    "@types/node": "^13.*"
   },
   "dependencies": {
     "node-html-parser": "^6.1.5",
-    "uralsjs-app-abstractions": "^0.1.1",
-    "uralsjs-id-html-tools": "0.0.1",
-    "uralsjs-map-record": "0.0.1",
-    "uralsjs-reactive-storage": "0.0.1"
+    "uralsjs-app-abstractions": "^0.1.*",
+    "uralsjs-id-html-tools": "0.0.*",
+    "uralsjs-map-record": "0.0.*",
+    "uralsjs-reactive-storage": "0.0.*"
   }
 }
